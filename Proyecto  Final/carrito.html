@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Tienda en Línea</title>
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/principal.css">
+</head>
+<body>
+    <!-- Menú superior -->
+    <header>
+        <div class="menu-container">
+            <div class="logo">
+                <h1>Tienda en Línea</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar artículos...">
+                <button>Buscar</button>
+            </div>
+            <div class="right-menu">
+                <span>Usuario: <strong id="user-name">Juan Pérez</strong></span>
+                <a href="sesion.html">Cerrar Sesión</a>
+                <a href="#" class="cart">Carrito</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Categorías</button>
+                    <div class="dropdown-content">
+                        <a href="#">Electrodomésticos</a>
+                        <a href="#">Ropa</a>
+                        <a href="#">Muebles</a>
+                        <a href="#">Tecnología</a>
+                        <a href="#">Deportes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor del carrito -->
+    <div class="cart-container">
+        <h2>Carrito de Compras</h2>
+        <div class="cart-items">
+            <!-- Sección de los artículos añadidos al carrito -->
+            <div class="cart-item">
+                <img src="img/producto1.jpg" alt="Producto 1" class="product-img">
+                <div class="item-details">
+                    <h3>Producto 1</h3>
+                    <p>Cantidad: 2</p>
+                    <p>Precio: $20.00</p>
+                </div>
+                <button class="remove-item">Eliminar</button>
+            </div>
+
+            <div class="cart-item">
+                <img src="img/producto2.jpg" alt="Producto 2" class="product-img">
+                <div class="item-details">
+                    <h3>Producto 2</h3>
+                    <p>Cantidad: 1</p>
+                    <p>Precio: $15.00</p>
+                </div>
+                <button class="remove-item">Eliminar</button>
+            </div>
+        </div>
+
+        <!-- Resumen de compra -->
+        <div class="cart-summary">
+            <h3>Resumen de la compra</h3>
+            <p>Total de artículos: <strong>3</strong></p>
+            <p>Total a pagar: <strong>$55.00</strong></p>
+            <button class="checkout-btn">Proceder al Pago</button>
+        </div>
+    </div>
+
+</body>
+</html>

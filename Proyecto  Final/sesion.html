@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Tienda en Línea</title>
+    <link rel="stylesheet" href="css/sesion.css">
+    <link rel="stylesheet" href="css/administrador.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Tienda en Linea</h1>
+        
+        <a href="Inicio.html">Tienda en linea</a>
+        <nav>
+            <a href="Inicio.html">Inicio</a>
+            <a href="sesion.html">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <main>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Iniciar Sesión</h2>
+            <form action="#" method="POST">
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" id="username" name="username" required placeholder="Ingresa tu nombre de usuario">
+                
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required placeholder="Ingresa tu contraseña">
+
+                <label for="user-type">Tipo de Usuario</label>
+                <select id="user-type" name="user-type" required>
+                    <option value="admin">Administrador</option>
+                    <option value="public">Público</option>
+                </select>
+                <button type="submit">Iniciar Sesión </button>
+                <a href="administrador.html">Iniciar Sesión</a>
+                
+            </form>
+            <p>¿No tienes una cuenta? <a href="#">Regístrate aquí</a></p>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
